@@ -1,0 +1,16 @@
+$ff: "Whitney", serif;
+$gr: linear-gradient(90deg, #2d1686 0%, #4e33b5 100%);
+$c1: #2e2d35;
+$c2: #474351;
+$c3: #918d9a;
+
+@mixin fzfwcol($f, $w, $c) {
+  font-size: $f;
+  font-weight: $w;
+  color: $c;
+}
+
+@mixin wh($wid, $hei) {
+  width: $wid;
+  height: $hei;
+}

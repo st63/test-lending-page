@@ -1,0 +1,278 @@
+@import "variables.scss";
+
+.container {
+  max-width: 1200px;
+}
+
+.header {
+  font-family: $ff;
+  @include fzfwcol(18px, 200, #fff);
+  min-height: 98px;
+  background: $gr;
+}
+
+.header__wrap {
+  padding: 31px 13px 0 4px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo {
+  position: relative;
+}
+
+.header__logo-icon {
+  @include wh(37.1px, 31.82px);
+}
+
+.header__logo-name {
+  @include wh(94.64px, 27.04px);
+  position: absolute;
+  left: 52px;
+  top: 3px;
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3px;
+  line-height: 26px;
+}
+
+.header__content-account {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.header__content-partners,
+.header__content-account-login {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.header__content-account-img {
+  @include wh(24px, 24px);
+  margin: 0px 12px 0px 100px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.home {
+  font-family: $ff;
+  position: relative;
+  min-height: 600px;
+  background: $gr;
+  padding: 56px 0 15px 0px;
+}
+
+.home__grafic {
+  position: relative;
+}
+
+.home__img {
+  position: absolute;
+  right: 5px;
+}
+
+.home__content {
+  padding-top: 42px;
+}
+
+.home__content-title {
+  @include fzfwcol(50px, 600, #fff);
+  line-height: 120%;
+}
+
+.home__content-text {
+  @include fzfwcol(24px, 300, #fff);
+  line-height: 31px;
+  margin: 30px 0 60px 0;
+}
+
+.button {
+  @include fzfwcol(17px, 600, #fff);
+  @include wh(222px, 50px);
+  border: 1px solid #f25b24;
+  border-radius: 4px;
+  background-color: #f25b24;
+  text-align: center;
+  padding: 15px 0px 10px 0px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.advantages {
+  font-family: $ff;
+  padding: 133px 59px 0 89px;
+}
+
+.advantages__title {
+  @include fzfwcol(40px, 600, $c1);
+  margin-bottom: 46px;
+}
+
+.advantages__box {
+  margin-bottom: 30px;
+}
+
+.advantages__box-item {
+  position: relative;
+  min-height: 235px;
+  border-radius: 6px;
+  background-color: #f6f5f9;
+  padding: 45px 203px 30px 40px;
+  margin-right: 30px;
+}
+
+.advantages__box-item-img {
+  position: absolute;
+  right: 10px;
+  top: 21px;
+}
+
+.advantages__box-item-title {
+  @include fzfwcol(23px, 600, $c1);
+  margin-bottom: 21px;
+  line-height: 29px;
+}
+
+.advantages__box-item-text {
+  @include fzfwcol(16px, 300, $c2);
+  line-height: 23px;
+}
+
+.offer {
+  font-family: $ff;
+  padding: 99px 0 185px 0px;
+}
+
+.offer__content {
+  background: $gr;
+  min-height: 371px;
+  color: #fff;
+  position: relative;
+  border-radius: 10px;
+  padding: 71px 70px 40px 70px;
+}
+
+.offer__content-img {
+  @include wh(670px, 323px);
+  position: absolute;
+  right: 0px;
+  top: 24px;
+}
+
+.offer__content-fon {
+  position: absolute;
+  right: 87px;
+  top: 18px;
+}
+
+.offer__content-text {
+  @include fzfwcol(32px, 600, #fff);
+  line-height: 45px;
+  margin-bottom: 45px;
+  letter-spacing: 1px;
+}
+
+.authorization {
+  font-family: $ff;
+  @include wh(490px, 472px);
+  background-color: #fff;
+  box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  position: absolute;
+  top: 110px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 56px 60px 55px 60px;
+}
+
+.exit {
+  position: relative;
+  margin-bottom: 7px;
+}
+
+.exit__x {
+  @include wh(20px, 20px);
+  position: absolute;
+  left: 383px;
+  top: -34px;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:before,
+  &:after {
+    position: absolute;
+    left: 15px;
+    content: " ";
+    @include wh(2px, 19px);
+    background-color: #918d9a;
+  }
+
+  &:before {
+    transform: rotate(45deg);
+  }
+
+  &:after {
+    transform: rotate(-45deg);
+  }
+}
+
+.authorization__title {
+  @include fzfwcol(40px, 600, $c1);
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.authorization__form-input-name {
+  @include fzfwcol(18px, 600, $c1);
+  margin-bottom: 12px;
+}
+
+.authorization__form-input {
+  @include fzfwcol(16px, 300, $c3);
+  @include wh(100%, 50px);
+  border-radius: 4px;
+  border: 1px solid #dddae7;
+  padding: 11px;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.authorization__form-input-mail {
+  margin-bottom: 20px;
+}
+
+.authorization__form-input-key {
+  margin-bottom: 5px;
+}
+
+.authorization__form-input-submit {
+  @include fzfwcol(18px, 600, #fff);
+  @include wh(100%, 50px);
+  background-color: #f25b24;
+  border-radius: 4px;
+  border: none;
+  margin-top: 29px;
+  padding-bottom: 2px;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}

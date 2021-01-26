@@ -1,0 +1,29 @@
+{
+  "name": "test-lending-adaptiv-boots",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "gulp styles",
+    "build:html": "gulp html",
+    "dev": "gulp start",
+    "gulp": "gulp"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.26.13",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-posthtml": "^3.0.5",
+    "gulp-sass": "^4.1.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-uglify-es": "^2.0.0",
+    "posthtml-expressions": "^1.7.1",
+    "posthtml-include": "^1.6.0",
+    "posthtml-remove-attributes": "^1.0.0",
+    "posthtml-richtypo": "^1.0.2",
+    "richtypo-rules-ru": "^4.0.3"
+  }
+}
